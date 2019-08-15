@@ -7,3 +7,20 @@ create_table :posts, force: :cascade, id: :uuid do |t|
 
   t.timestamps null: false
 end
+
+create_table :authors, force: :cascade, id: :uuid do |t|
+  t.string :name
+
+  t.timestamps
+end
+
+create_table :books, force: :cascade, id: :uuid do |t|
+  t.uuid :author_id
+  t.index ["author_id"], name: "index_books_on_author_id"
+  add_foreign_key :books, :authors, name: :author_id
+
+  t.string :title
+  t.integer :price
+
+  t.timestamps
+end
