@@ -1,0 +1,9 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+# frozen_string_literal: true
+
+create_table :posts, force: :cascade, id: :uuid do |t|
+  t.string :title
+
+  t.timestamps null: false
+end

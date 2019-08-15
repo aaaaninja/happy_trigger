@@ -282,3 +282,4 @@ tags
 [._]*.un~
 
 # End of https://www.gitignore.io/api/vim,ruby,code,emacs,rails,rubymine+all
+schema
