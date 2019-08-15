@@ -60,7 +60,6 @@ GEM
     async-io (1.25.0)
       async (~> 1.14)
     backports (3.15.0)
-    base32-crockford (0.1.0)
     bootsnap (1.4.4)
       msgpack (~> 1.0)
     build-environment (1.11.0)
@@ -204,12 +203,6 @@ GEM
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     ulid (1.1.0)
-    ulid-rails (0.1.0)
-      activemodel (>= 5.0)
-      activerecord (>= 5.0)
-      activesupport (>= 5.0)
-      base32-crockford (~> 0.1)
-      ulid (~> 1.0)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
@@ -230,7 +223,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
-  ulid-rails
+  ulid
 
 RUBY VERSION
    ruby 2.6.3p62

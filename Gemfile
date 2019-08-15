@@ -7,7 +7,7 @@ ruby '2.6.3'
 gem 'rails', '~> 5.2.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
-gem "ulid-rails"
+gem "ulid"
 gem "ridgepole"
 # Use Falcon as the app server
 gem "falcon"

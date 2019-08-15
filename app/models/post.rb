@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Post < ApplicationRecord
-  include ULID::Rails
-  ulid :id # The argument is the primary key column name
+  before_create do
+    self.id = ULID.generate_bytes
+  end
 end
